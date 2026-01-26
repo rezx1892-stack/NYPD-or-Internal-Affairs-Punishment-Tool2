@@ -57,12 +57,12 @@ Reason: ${offenseNumbers || ""}
 Action: ${actions || ""}
 Duration: ${input.duration || ""}
 Note: User can appeal if they think this was a mistake ➜ #ticket-support
-Proof: <:IA:1287467525923143751> Ticket-[${input.ticketNumber || ""}] <:IA:1287467525923143751>`;
+Proof: <:IA:1287467525923143751> Ticket-${input.ticketNumber || ""} <:IA:1287467525923143751>`;
       } else {
         // Revoke format
         message = `<:NYPD:1287467909186060288>| Revoked Punishment
 <:NYPD:1287467909186060288>| User ➜ <@${input.userId}>
-<:NYPD:1287467909186060288>| Reason ➜ <:IA:1287467525923143751> Ticket: (${input.ticketNumber || ""}) <:IA:1287467525923143751>`;
+<:NYPD:1287467909186060288>| Reason ➜ <:IA:1287467525923143751> Ticket: ${input.ticketNumber || ""} <:IA:1287467525923143751>`;
       }
 
       // Log the generation
