@@ -47,7 +47,7 @@ export async function registerRoutes(
       let message = "";
 
       if (input.action === "Punishment") {
-        const offenseNumbers = selectedOffenses.map(o => o.code).join(", ");
+        const offenseNumbers = selectedOffenses.map(o => `Offense ${o.code}`).join(", ");
         // Use manualAction if provided, otherwise leave it blank
         const actionText = input.manualAction || "";
         
