@@ -43,6 +43,7 @@ export const api = {
         ticketNumber: z.string().optional(),
         duration: z.string().optional(),
         action: z.enum(["Punishment", "Revoke"]),
+        manualAction: z.string().optional(),
         offenseIds: z.array(z.number()),
         notes: z.string().optional(),
         useAi: z.boolean().default(false),
