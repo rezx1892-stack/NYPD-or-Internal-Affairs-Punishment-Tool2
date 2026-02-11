@@ -58,7 +58,7 @@ Reason: ${offenseNumbers || ""}
 Action: ${actionText}
 Duration: ${input.duration || ""}
 Note:  **User can appeal if they think this was a mistake —>  #ticket-support **
-Proof: <:IA:1287467525923143751> Ticket - [${input.ticketNumber || ""}] <:IA:1287467525923143751>`;
+Proof: <:IA:1287467525923143751> Ticket - ${input.ticketNumber || ""} <:IA:1287467525923143751>`;
       } else {
         // Revoke format
         message = `<:IA:1287467525923143751> | Revoked: <@${input.userId}>
